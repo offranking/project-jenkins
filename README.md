@@ -1,10 +1,31 @@
 # project-jenkins
 Introduction to jenkins
 
+Open your aws.. by login into it and navigate to your EC2 instance
+<img width="722" height="296" alt="Screenshot 2025-07-11 at 9 52 03 pm" src="https://github.com/user-attachments/assets/c3679795-a2f9-43bc-8678-ae99d1dad6af" />
+
+#####Create a new EC2 instance and launch it using the Ubuntu operating system.
+
+<img width="1354" height="559" alt="Screenshot 2025-07-11 at 9 53 31 pm" src="https://github.com/user-attachments/assets/f0652b08-08e4-400f-8de8-617b2f0ae4eb" />
+
+Now, create a key pair and configure your security group to allow traffic, then launch your instance.
+
+<img width="926" height="708" alt="Screenshot 2025-07-11 at 9 55 08 pm" src="https://github.com/user-attachments/assets/9b23088b-3e61-4af6-b9b0-ac894777d316" />
+
+Now, connect to your computer using the SSH key you downloaded from AWS.
+First, open your terminal and navigate to the directory where the key file is saved. For example cd ~/Downloads
+
+<img width="852" height="93" alt="Screenshot 2025-07-11 at 10 01 17 pm" src="https://github.com/user-attachments/assets/f7a0c692-3000-4915-9841-7828a91c8dd6" />
+
+Next, set the correct permissions for your SSH key by running the following command chmod 400 "newubuntu-server.pem"
+
+<img width="1051" height="158" alt="Screenshot 2025-07-11 at 10 01 49 pm" src="https://github.com/user-attachments/assets/b9de5560-a487-4c10-a516-9a5e4bb29d3b" />
 
 
-# # # Log in to your AWS account and navigate to your EC2 dashboard & SSH into your EC2 instance using your private key. Open your terminal and run the command:
-run "sudo apt update"
+Now that you’re connected to your AWS instance via SSH from your local terminal, the next step is to update the package list.
+Run the following command: sudo apt update
+
+This ensures your system has the latest package information before installing any new software.
 
 <img width="1059" height="896" alt="Screenshot 2025-07-11 at 4 35 55 pm" src="https://github.com/user-attachments/assets/568b55ca-aa8c-423a-bbab-efe48b5e3fe8" />
 
